@@ -1,14 +1,27 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+
 function About() {
   return (
-    <section id="about" className="py-20 bg-gray-100">
+    <section
+      id="about"
+      className="mt-30 py-20">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-6">About Me <span><FontAwesomeIcon icon={faUser} /></span></h2>
-        <p className="text-center max-w-2xl mx-auto text-gray-700">
-            Full-stack developer with expertise in React, FastAPI, Python, and SAP automation. 
-            Dedicated to building efficient, user-driven solutions and leveraging data analysis to solve real-world challenges.
+        <h2 className="text-3xl font-bold text-center mb-6 flex items-center justify-center gap-2">
+          About Me{" "}
+          <FontAwesomeIcon icon={faUser} className="text-yellow-400 text-2xl" />
+        </h2>
+
+        <p className="text-center max-w-2xl mx-auto text-gray-300 leading-relaxed">
+          Full-stack developer with expertise in{" "}
+          <span className="text-blue-400 font-semibold">React</span>,{" "}
+          <span className="text-green-400 font-semibold">FastAPI</span>,{" "}
+          <span className="text-indigo-400 font-semibold">Python</span>, and{" "}
+          <span className="text-pink-400 font-semibold">SAP automation</span>.{" "}
+          Dedicated to building efficient, user-driven solutions and leveraging{" "}
+          <span className="text-yellow-400 font-semibold">data analysis</span>{" "}
+          to solve real-world challenges.
         </p>
       </div>
     </section>

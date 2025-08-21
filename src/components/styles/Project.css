@@ -1,0 +1,4 @@
+.transition-all{
+    transition-property: all;
+    transition-duration: 0.7s;
+}

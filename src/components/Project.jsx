@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faProjectDiagram } from "@fortawesome/free-solid-svg-icons/faProjectDiagram";
+import './styles/Project.css'
 
 function Projects() {
   const projects = [
@@ -11,14 +12,14 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="py-20 mt-20">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-6">Projects <span><FontAwesomeIcon icon={faProjectDiagram} /></span></h2>
+        <h2 className="text-2xl font-bold text-center mb-6">Projects <span><FontAwesomeIcon icon={faProjectDiagram} /></span></h2>
         <div className="grid md:grid-cols-3 gap-6">
           {projects.map((p, i) => (
-            <> <a href={p.link} target="_blank" rel="noopener noreferrer"><div key={i} className="bg-gray-200 p-6 rounded-lg shadow hover:shadow-lg">
-              <h3 className="text-xl font-semibold">{p.title}</h3>
-              <p className="text-gray-600 mt-2">{p.desc}</p>
+            <> <a href={p.link} target="_blank" rel="noopener noreferrer"><div key={i} className=" p-6 rounded-lg shadow shadow-slate-50 hover:translate-x-0.5 hover:-translate-y-0.5 transition-all ">
+              <h3 className="text-l font-semibold">{p.title}</h3>
+              <p className="text-gray-400 mt-2 text-xs">{p.desc}</p>
             </div></a></>
           ))}
         </div>
