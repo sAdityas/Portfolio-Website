@@ -4,7 +4,7 @@ import { Github, Linkedin, ArrowRight } from "lucide-react";
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-neutral-500/60 border-b border-white/25">
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
+      <nav className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
       <a 
         href="/" 
         className="font-bold h-9 mt-2"

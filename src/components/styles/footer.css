@@ -1,0 +1,65 @@
+
+
+.text-xs {
+    font-size: 0.6rem;
+}
+
+
+
+/* spinner wrapper (optional centering) */
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* base circle */
+.loader {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.1); /* faint base */
+  position: relative;
+  overflow: visible; /* allow highlight to extend out */
+  animation: rotate 2s linear infinite;
+}
+
+/* highlight (moving + extending) */
+.loader::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 30px; /* initial short */
+  background: white;
+  transform-origin: top center; /* rotates around circle center */
+  transform: rotate(0deg) translateY(-30px);
+  animation: highlight 2s linear infinite;
+}
+
+/* circle spin */
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* comet effect */
+@keyframes highlight {
+  0% {
+    height: 30px; /* short border */
+    opacity: 1;
+  }
+  70% {
+    height: 30px; /* hugging circle */
+    opacity: 1;
+  }
+  85% {
+    height: 120px; /* extends out */
+    opacity: 1;
+  }
+  100% {
+    height: 30px; /* reset */
+    opacity: 0;
+  }
+}

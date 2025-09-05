@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Contact() {
   return (
-    <section id="contact" className="mt-20 py-20">
+    <section id="contact" className="mt-20 py-20 mb-20">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
         <p className="mb-4">Feel free to reach out for collaborations or projects!</p>

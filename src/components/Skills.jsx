@@ -29,7 +29,6 @@ export default function Skills() {
     <h2 className='text-2xl font-bold text-center m-4'>
       Skills <span><FontAwesomeIcon icon={faTasks} /></span>
     </h2>
-
     {/* Responsive grid */}
     <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8'>
       {skills.map((s, i) => (

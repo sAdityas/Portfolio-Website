@@ -14,14 +14,16 @@ function About() {
         </h2>
 
         <p className="text-center max-w-2xl mx-auto text-gray-300 leading-relaxed">
-          Full-stack developer with expertise in{" "}
+        I am a full-stack developer with specialized expertise in {" "} 
           <span className="text-blue-400 font-semibold">React</span>,{" "}
           <span className="text-green-400 font-semibold">FastAPI</span>,{" "}
-          <span className="text-indigo-400 font-semibold">Python</span>, and{" "}
+          <span className="text-indigo-400 font-semibold">Python,{" "}</span>along with a strong background in {" "}
           <span className="text-pink-400 font-semibold">SAP automation</span>.{" "}
-          Dedicated to building efficient, user-driven solutions and leveraging{" "}
+          I am passionate about building scalable, user-centric web applications and backend systems that are both efficient and maintainable.{" "}
+          My experience includes designing and implementing end-to-end solutions, integrating enterprise tools like SAP, and automating complex workflows to improve operational productivity.{" "}
+          I also have a keen interest in {" "}
           <span className="text-yellow-400 font-semibold">data analysis</span>{" "}
-          to solve real-world challenges.
+          which I leverage to drive smarter decision-making and solve real-world business problems through technology.{" "}
         </p>
       </div>
     </section>

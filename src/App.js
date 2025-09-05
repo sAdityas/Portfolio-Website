@@ -23,9 +23,7 @@ function App() {
       <Reveal>
       <Skills />
       </Reveal>
-      <Reveal>
       <Projects /> 
-      </Reveal>
       <Reveal>
       <Experience />
       </Reveal>
@@ -33,6 +31,7 @@ function App() {
       <Contact />
       </Reveal>
       <Footer />
+
     </div>
   );
 }
