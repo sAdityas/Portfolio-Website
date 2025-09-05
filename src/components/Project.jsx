@@ -6,6 +6,8 @@ import Portfolio from '../resources/portfolio.mp4'
 import AMB from '../resources/AMB.mp4'
 import Reveal from "../components/styles/Reveal.tsx";
 import Quzi from "../resources/Quizapp.mp4"
+import Agreemnt from "../resources/Agreement.mp4"
+
 
 function Projects() {
 
@@ -29,7 +31,7 @@ function Projects() {
       title: "SAP Automation", 
       desc: "Automated SAP GUI processes to streamline workflows and enhance the end-user experience, utilizing Python Flask for backend services and ReactJS for an interactive frontend interface.", 
       link: 'https://github.com/sAdityas/SAP-Automation-Projects',
-      img: Portfolio,
+      img: Agreemnt,
     },
     { 
       title: "Quiz Application", 
@@ -56,11 +58,11 @@ function Projects() {
           
           {projects.map((p, i) => (
              
-        <div key={i} className="flex flex-col items-center justify-center p-5 rounded-lg cursor-default ">
+        <div key={i} className=" flex flex-col items-center justify-center p-5 rounded-lg cursor-default ">
           <Reveal>
           <a href={p.link} target="_blank" rel="noopener noreferrer">
-              <div className="flex flex-row max-w-[100vh] shadow shadow-xs cursor-pointer shadow-purple-600  hover:translate-x-0.5 hover:-translate-y-0.5 transition-all px-5 py-5 rounded-lg">
-                <video ref={videoRef} src={p.img} className="webpic min-w-12 max-w-50 mx-auto" autoPlay muted loop playsInline >not supported</video>
+              <div className="flex flex-col max-w-[100vh] shadow shadow-xs cursor-pointer shadow-purple-600  hover:translate-x-0.5 hover:-translate-y-0.5 transition-all px-5 py-5 rounded-lg">
+                <video ref={videoRef} src={p.img} className="webpic min-w-12 max-w-50 mx-auto hover:scale-[2] transition-all duration-100" autoPlay muted loop playsInline >not supported</video>
                 <div className="flex flex-col justify-around items-center">
                   <h3 className="text-l font-semibold px-10 whitespace-nowrap rounded-lg">{p.title}</h3>
                   <p className="text-gray-400 mt-2 text-sm px-5">{p.desc}</p>
