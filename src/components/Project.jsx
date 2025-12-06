@@ -44,6 +44,12 @@ function Projects() {
       desc: "A movie booking and recommendation website built using Python Flask for the backend, React for the frontend, and leveraging NLP and Pandas for personalized movie recommendations. The platform allows users to book tickets seamlessly while receiving data-driven suggestions based on their preferences.",
       link:"https://github.com/sAdityas/Movie-Recommendation.git",
       img: AMB,
+    },
+    {
+      title: 'Brazil E-Commerce Olist Data analysis',
+      desc: 'Analyzed 100k+ multi-table transactional dataset using Python, Pandas Seaborn, and Folium Identified trends in monthly sales, revenue patterns, top categories, seller performance, and payment behavior. Built geolocation maps for customer & seller distribution; performed sentiment analysis on translated customer reviews using NLP (VADER). Delivered business insights improving understanding of customer behavior delivery performance, and product demand cycle',
+      link: 'https://github.com/sAdityas/Brazilian-E-Commerce-Dataset-Analysis.git',
+      img: faProjectDiagram,
     }
   ];
 
