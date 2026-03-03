@@ -24,7 +24,7 @@ function Experience() {
           logo:  <img src={CODIT} className='h-10 w-10 bg-white' alt='logo' />
         },
         {
-          id:4,
+          id:3,
           title: 'Track Components Ltd.',
           role:"Asst. Engineer - Data Analyst",
           year: 'Feb 2025 - Till date',
