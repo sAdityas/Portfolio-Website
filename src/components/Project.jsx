@@ -82,7 +82,7 @@ function Projects() {
           <Reveal>
           <a href={p.link} target="_blank" rel="noopener noreferrer">
               <div className="flex flex-col max-w-[100vh] shadow shadow-xs cursor-pointer shadow-purple-600  hover:translate-x-0.5 hover:-translate-y-0.5 transition-all px-5 py-5 rounded-lg">
-                <video ref={videoRef} src={p.img} className="webpic min-w-12 max-w-50 mx-auto hover:scale-[2] transition-all duration-100" autoPlay muted loop playsInline >not supported</video>
+                {p.img.endsWith('.mp4') ? <video ref={videoRef} src={p.img} className="webpic min-w-12 max-w-50 mx-auto hover:scale-[2] transition-all duration-100" autoPlay muted loop playsInline >not supported</video> : <img src={p.img} className="webpic min-w-12 max-w-50 mx-auto hover:scale-[2] transition-all duration-100" alt={p.title} />}
                 <div className="flex flex-col justify-around items-center">
                   <h3 className="text-l font-semibold px-10 whitespace-nowrap rounded-lg">{p.title}</h3>
                   <p className="text-gray-400 mt-2 text-sm px-5">{p.desc}</p>
